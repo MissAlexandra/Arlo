@@ -1,6 +1,5 @@
 const { ReactionUserManager } = require("discord.js");
 const mongoose = require("mongoose");
-const UserSchema = require("../utility/UserSchema");
 const User = require("../utility/UserSchema");
 
 
@@ -11,7 +10,7 @@ module.exports = {
 	staffOnly: true,
 	permissions: ["KICK_MEMBERS", "EMBED_LINKS", "MANAGE_CHANNELS"],
 	execute: async (arlo, msg, args) => {
-		mongoose.connect("mongodb+srv://alexandra:9yJjhCVUTM5DdMc@cluster0.uof6m.mongodb.net/arlo?retryWrites=true&w=majority",{
+		mongoose.connect("",{
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 			useFindAndModify: false

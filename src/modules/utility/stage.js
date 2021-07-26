@@ -7,7 +7,7 @@ module.exports = {
 	name: "stage",
 	guildOnly: true,
 	execute: async (arlo, msg, args) => {
-		mongoose.connect("mongodb+srv://alexandra:9yJjhCVUTM5DdMc@cluster0.uof6m.mongodb.net/arlo?retryWrites=true&w=majority",{
+		mongoose.connect("",{
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
 			useFindAndModify: false
