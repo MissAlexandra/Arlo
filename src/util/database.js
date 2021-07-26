@@ -28,12 +28,18 @@ const schemas = {
 		settings: {
 			prefix: String
 		}
+	}),
+	Stage: new mongoose.Schema({
+		username1: mongoose.SchemaTypes.String,
+		performance1: mongoose.SchemaTypes.String,
+		date1: mongoose.SchemaTypes.Number
 	})
 }
 
 const models = {
 	//User: mongoose.model("User", schemas.User, "users"),
-	Guild: mongoose.model("Guild", schemas.Guild, "guilds")
+	Guild: mongoose.model("Guild", schemas.Guild, "guilds"),
+	Stage: mongoose.model("Stage", schemas.Stage, "stage")
 }
 
 module.exports = {

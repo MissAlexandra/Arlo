@@ -16,6 +16,7 @@ class DatabaseConnection {
 			this.refs = {
 				users: this.connection.db.collection("users"),
 				guilds: this.connection.db.collection("guilds"),
+				stage: this.connection.db.collection("stage"),
 				accounts: this.connection.db.collection("accounts"),
 				sessions: this.connection.db.collection("sessions")
 			}
